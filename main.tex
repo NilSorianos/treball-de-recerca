@@ -1,0 +1,134 @@
+\documentclass[11pt, a4paper]{report}
+
+% --- Paquets bàsics -
+\usepackage[catalan,provide=*]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{top=2.5cm, bottom=2.5cm, left=3cm, right=3cm}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{listings} 
+\usepackage{helvet}
+\usepackage[hidelinks]{hyperref} 
+\renewcommand{\familydefault}{\sfdefault}
+\setlength{\headheight}{22.1pt} % Ajust per evitar warnings de fancyhdr
+
+% --- Definició de colors ---
+\definecolor{primaryblue}{HTML}{2D74DA}
+\definecolor{codebackground}{HTML}{F8F9FA}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{codeblue}{rgb}{0.13,0.29,0.53}
+
+% --- Configuració de codi (listings) ---
+\lstset{
+    backgroundcolor=\color{codebackground},   
+    commentstyle=\color{codegray},
+    keywordstyle=\color{codeblue}\bfseries,
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\small,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    frame=single,
+    rulecolor=\color{lightgray},
+    xleftmargin=10pt,
+    extendedchars=true,
+    literate={á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
+             {Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1
+             {à}{{\`a}}1 {è}{{\`e}}1 {ì}{{\`i}}1 {ò}{{\`o}}1 {ù}{{\`u}}1
+             {À}{{\`A}}1 {È}{{\'E}}1 {Ì}{{\`I}}1 {Ò}{{\`O}}1 {Ù}{{\`U}}1
+             {ñ}{{\~n}}1 {Ñ}{{\~N}}1 {¿}{{?`}}1 {¡}{{!`}}1
+             {·}{{\textperiodcentered}}1 {ç}{{\c{c}}}1 {Ç}{{\c{C}}}1
+}
+
+% --- Configuració de capçaleres i peus dinàmics ---
+\pagestyle{fancy}
+\fancyhf{} 
+
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+
+\fancyhead[L]{\fontsize{9}{11} \selectfont \textcolor{gray}{\leftmark}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{lightgray}\leaders\hrule height \headrulewidth\hfill}}
+
+\fancyfoot[C]{\fontsize{10}{12} \selectfont \textcolor{gray}{\thepage}}
+
+\fancypagestyle{plain}{
+    \fancyhf{}
+    \fancyhead[L]{\fontsize{9}{11} \selectfont \textcolor{gray}{\leftmark}}
+    \fancyfoot[C]{\fontsize{10}{12} \selectfont \textcolor{gray}{\thepage}}
+    \renewcommand{\headrulewidth}{0.4pt}
+    \renewcommand{\headrule}{\hbox to\headwidth{\color{lightgray}\leaders\hrule height \headrulewidth\hfill}}
+}
+
+% --- Estil de títols ---
+\titleformat{\chapter}[hang]
+  {\normalfont\huge\bfseries\color{primaryblue}}
+  {\thechapter.}{0.5em}{}
+\titlespacing*{\chapter}{0pt}{0pt}{20pt}
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{primaryblue}}
+  {\thesection}{1em}{}
+
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\color{darkgray}}
+  {\thesubsection}{1em}{}
+
+% --- Inici del document ---
+\begin{document}
+
+% --- PORTADA ---
+\begin{titlepage}
+    \centering
+    \vspace*{3cm} 
+    
+    {\huge \bfseries \textcolor{primaryblue}{Anàlisi de la seguretat de les contrasenyes}}\\[0.8cm]
+    {\Large \textsc{Estudi de la resistència a atacs de força bruta}}\\[2.5cm]
+    {\large \textbf{Treball de Recerca de Batxillerat}}\\[1.5cm]
+    
+    \vfill
+    
+    \begin{flushright}
+        \fbox{
+            \begin{tabular}{ll}
+                \textbf{Autor:} & Nil Soriano \\
+                \textbf{Tutor:} & Adria Santacreu \\
+                \textbf{Centre:} & IESant Pol \\
+                \textbf{Data:} & Març de 2026
+            \end{tabular}
+        }
+    \end{flushright}
+    
+\end{titlepage}
+
+\tableofcontents
+\newpage 
+
+% --- Contingut ---
+\input{seccions/01_introduccio.tex}
+
+\input{seccions/02_marc_teoric.tex}
+
+\input{seccions/03_desenvolupament.tex}
+
+\input{seccions/04_disseny_experimental.tex}
+
+\input{seccions/05_analisi_resultats.tex}
+
+\input{seccions/06_conclusions.tex}
+
+\input{seccions/07_bibliografia.tex}
+
+\end{document}

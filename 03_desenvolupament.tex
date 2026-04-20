@@ -1,0 +1,31 @@
+\chapter{Desenvolupament del producte}
+Aquest capítol detalla la construcció de l'eina de programari encarregada de realitzar els atacs i calcular les mètriques.
+
+\section{Entorn i eines utilitzades}
+El programari s'ha desenvolupat en Python, aprofitant les seves biblioteques de criptografia i la facilitat per gestionar operacions de text massives.
+
+\begin{lstlisting}[language=Python, caption=Funció principal de comparació de hashes]
+import hashlib
+
+def verificar_contrasenya(intent, hash_objectiu):
+    # Generem el hash MD5 de l'intent actual
+    hash_intent = hashlib.md5(intent.encode()).hexdigest()
+    
+    # Comprovem si coincideix amb l'objectiu
+    if hash_intent == hash_objectiu:
+        return True
+    return False
+
+# Exemple d'ús
+print(verificar_contrasenya("1234", "81dc9bdb52d04dc20036dbd8313ed055"))
+\end{lstlisting}
+
+\section{Lògica i optimització (Multiprocessament)}
+Per extreure el màxim rendiment del maquinari, s'ha implementat el mòdul de multiprocessament. El codi divideix la càrrega de l'espai de cerca entre tots els nuclis de la CPU de manera simultània.
+
+\section{Projecció matemàtica del temps}
+Per evitar proves pràctiques que durin segles, el programa calcula el temps estimat teòric per a contrasenyes complexes utilitzant la fórmula de l'espai de cerca:
+
+$$T = \frac{N^L}{R}$$
+
+On $N$ és el nombre de caràcters possibles (l'alfabet utilitzat), $L$ la longitud de la contrasenya i $R$ la ràtio de hashes per segon que pot processar l'ordinador.
