@@ -1,56 +1,47 @@
-# Protocol de Treball LaTeX (Mandat Obligatori)
+# Projecte: Anàlisi de la seguretat de les contrasenyes
 
-Aquest document conté les preferències de l'usuari i s'ha de seguir de manera estricta.
+Aquest fitxer serveix com a guia de context per a Gemini. Resumeix l'estat del Treball de Recerca (TdR) de Nil Soriano.
 
-## 1. Principi de No Intervenció No Sol·licitada
-- **PROHIBIT MODIFICAR RES QUE NO S'HAGI DEMANAT EXPLÍCITAMENT.**
-- Això inclou tant el contingut com l'estil, el format o l'estructura dels documents.
-- Si no s'ha demanat un canvi en una secció o línia específica, aquesta s'ha de mantenir intacta.
+## Com treballaràs
+Sempre seguiràs les indicacions de la skill que hem definit per a aquest projecte: `/workspaces/treball-de-recerca/Skills/treball-de-recerca-latex.md`
 
-## 2. Abast de les Modificacions
-- Limitaré les meves modificacions exclusivament als elements i/o apartats dels quals s'hagi parlat o demanat canvis.
-- La resta del document s'ha de mantenir exactament igual com estava.
+## 📝 Descripció del Projecte
+El treball analitza la seguretat de les contrasenyes, estudiant la seva resistència davant d'atacs de força bruta. Inclou el desenvolupament d'una eina en Python per calcular temps de desxifrat segons longitud i alfabet.
 
-## 3. Protecció del Preàmbul
-- **EL PREÀMBUL ÉS INTOCABLE.** No es pot modificar, afegir ni eliminar res del preàmbul de LaTeX a no ser que l'usuari ho demani de forma explícita.
+- **Autor:** Nil Soriano
+- **Tutor:** Adrià Santacreu
+- **Centre:** IE Sant Pol
+- **Curs:** 2025-2026
 
-## 4. Protocol de Consulta Previ
-- **CONSULTAR SEMPRE ABANS DE COMENÇAR.** Abans de realitzar qualsevol canvi físic als fitxers, presentaré un pla d'actuació o descripció dels canvis i esperaré la confirmació de l'usuari.
+## 🚀 Estat Actual del Projecte
+L'estructura del projecte s'ha organitzat en carpetes per millorar la claredat.
+- [x] **Estructura Modular:** Organitzada en `Tdr/seccions/`, `Tdr/figures/` i `build/`.
+- [x] **Portada:** Finalitzada i configurada amb colors corporatius.
+- [x] **Introducció:** Escrit el context, objectius i hipòtesis.
+- [x] **Marc Teòric:** Inclou conceptes de hashing (MD5, SHA) i mètodes d'atac.
+- [/] **Desenvolupament:** S'explica la lògica de l'eina Python, però falta el codi final.
+- [ ] **Part Pràctica:** Pendent d'execució d'experiments i recollida de dades reals.
+- [ ] **Anàlisi de Resultats:** Esquelet preparat per omplir amb dades de temps.
+- [ ] **Conclusions i Bibliografia:** En fase inicial.
 
----
+## 📅 TODO (Tasques pendents)
+1.  **Finalitzar l'eina Python:** Implementar `hashlib` i `multiprocessing`.
+2.  **Experimentació:** Realitzar les proves de força bruta i anotar els temps.
+3.  **Redacció:** Completar les seccions 04 i 05 amb els resultats obtinguts.
+4.  **Imatges:** Verificar que `bitwarden.png` es visualitza correctament des de `Tdr/figures/`.
+5.  **Compilació:** Assegurar que el PDF es genera correctament a la carpeta `build/`.
 
-# Context del Projecte: Treball de Recerca (TdR)
+## 📂 Índex del Projecte (Estructura de Carpetes)
+- **`Tdr/`**: Fitxers font de LaTeX.
+  - `main.tex`: Fitxer principal.
+  - `seccions/`: Capítols modulars (.tex).
+  - `figures/`: Imatges i gràfics.
+- **`build/`**: Fitxers auxiliars i PDF final.
+- **`Skills/`**: Protocols de treball per a la IA.
+- **`docs/`**: Documentació addicional.
+- **`codi/`**: Scripts de Python per al producte.
 
-**Títol:** Anàlisi de la seguretat de les contrasenyes: Estudi de la resistència a atacs de força bruta.
-**Autor:** Nil Soriano
-**Objectiu:** Desenvolupar una eina en Python per analitzar quant de temps es triga a desxifrar diferents tipus de contrasenyes (longitud i alfabet) i comparar-les amb les automàtiques "segures".
-
-## 📍 Estat Actual
-- **Estructura LaTeX:** Finalitzada i modularitzada en fitxers `.tex`.
-- **Contingut:** Introducció, marc teòric i part del desenvolupament escrits. Seccions d'experimentació, resultats i conclusions són actualment esquemes/esquelets.
-- **Producte (Python):** Hi ha un prototip bàsic (`tdr.py`), però falta implementar la lògica real de hashing (MD5), multiprocessament i gestió d'alfabets descrita a la memòria.
-- **Problemes pendents:** Falta la imatge `bitwarden.png`.
-
-## 📂 Índex del Projecte
-1. **Introducció:** Context, Bitwarden, Objectius i Hipòtesi.
-2. **Marc teòric:** Hashing (MD5/SHA-256) i mètodes d'atac.
-3. **Desenvolupament del producte:** Eines, Python, optimització i fórmula matemàtica.
-4. **Disseny experimental:** Banc de proves (4-7 caràcters) i hardware.
-5. **Anàlisi de resultats:** Temps real vs teòric, impacte de l'alfabet.
-6. **Conclusions:** Validació de la hipòtesi i reflexió final.
-7. **Bibliografia.**
-
-## ✅ TODO (Tasques pendents)
-- [ ] Recuperar o substituir la imatge `bitwarden.png` per compilar el PDF correctament.
-- [ ] Ampliar el Marc Teòric amb més profunditat sobre la comparació de mètodes.
-- [ ] **Programació:** Desenvolupar el script real de Python amb `hashlib` i `multiprocessing`.
-- [ ] **Experimentació:** Executar les proves per obtenir dades reals de temps de desxifrat.
-- [ ] Redactar el Disseny Experimental (Secció 04).
-- [ ] Redactar l'Anàlisi de Resultats (Secció 05) amb les dades obtingudes.
-- [ ] Tancar Conclusions i Bibliografia.
-
-## 🧠 Context de l'Usuari
-- Estudiant de Batxillerat realitzant el seu Treball de Recerca.
-- Interès en ciberseguretat i programació Python.
-- Utilitza LaTeX modularitzat per a la memòria del treball.
-
+## 👤 Context de l'Usuari
+- Estudiant de Batxillerat realitzant el TdR.
+- Utilitza **LaTeX** amb un estil modern (color `primaryblue`).
+- Enfocament en ciberseguretat i programació.
