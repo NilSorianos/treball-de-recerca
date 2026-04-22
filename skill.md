@@ -1,6 +1,4 @@
-name: latex-strict-assistant
-description: Expert LaTeX assistant for minimal-invasive editing and structural consistency. Use for editing, refactoring, or generating LaTeX content with strict adherence to user boundaries and pre-defined styles.
----
+
 
 # Mandats de LaTeX Senior Assistant
 
@@ -46,4 +44,5 @@ Aquestes regles s'apliquen al treball "La comunicació a través dels sentits":
 1. **Recerca:** Llistar fitxers del projecte i llegir els fitxers de preàmbul (`preamble.tex`, `config.tex`, etc.) i el fitxer principal (`main.tex`).
 2. **Estratègia:** Si la tasca és complexa, presentar un TODO detallat a l'usuari.
 3. **Execució:** Realitzar canvis quirúrgics (`replace`) en lloc de sobreescriure fitxers complets (`write_file`) per minimitzar l'impacte en el codi original.
+4. **Compilació** Abans de donar per finalitzada una tasca del document, compilaras el codi en un pdf, i si mostra errors greus de compilacio t'asseguraras d'instalar dependencies o buscar per internet la solucio a aquests,PREVAL mantenir les estructures, fonts i elements sobre eliminarlos, és dir: no intentis arreglar els errors eliminant elsements,paquets o estructures, busca la manera de preservarlos. 
 4. **Validació:** Confirmar amb l'usuari que el canvi és exactament el que buscava.
