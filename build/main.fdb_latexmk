@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1776857868.37142 "main.tex" "/workspaces/treball-de-recerca/build/main.pdf" "main" 1776857869.03605 0
+["pdflatex"] 1776926488.54714 "main.tex" "/workspaces/treball-de-recerca/build/main.pdf" "main" 1776926489.22119 0
   "/etc/texmf/web2c/texmf.cnf" 1776857750.5023 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/codespace/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk" 1776857868.21731 20008 3a70df432618c9e6fad87eb40d0237c6 ""
   "/home/codespace/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600pk" 1776857867.47331 21952 f8e8477267326bc550b7611a00a8c615 ""
@@ -100,9 +100,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1776857773.9053 128028 f533b797fba58d231669ea19e894e23e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1776857797 6822862 6a45b3a7727967599613b93c21bea4fd ""
-  "/workspaces/treball-de-recerca/build/main.aux" 1776857868.94631 4299 3564811cf640be8e372e30ee9b47dd37 "pdflatex"
-  "/workspaces/treball-de-recerca/build/main.out" 1776857868.94831 3753 a203410af686b416c360b24316f25aa8 "pdflatex"
-  "/workspaces/treball-de-recerca/build/main.toc" 1776857868.94831 1774 75f26c7a4083dd1a3befd38d9a210a6c "pdflatex"
+  "/workspaces/treball-de-recerca/build/main.aux" 1776926489.11243 4299 3564811cf640be8e372e30ee9b47dd37 "pdflatex"
+  "/workspaces/treball-de-recerca/build/main.out" 1776926489.11343 3753 a203410af686b416c360b24316f25aa8 "pdflatex"
+  "/workspaces/treball-de-recerca/build/main.toc" 1776926489.11443 1774 75f26c7a4083dd1a3befd38d9a210a6c "pdflatex"
   "figures/bitwarden.png" 1776671842.48375 40714 f06b2ade5454d1a89cdaffbbbea9b224 ""
   "main.tex" 1776671842.48475 4121 9e1647b34c500e486d8bb69efed70ebd ""
   "seccions/01_introduccio.tex" 1776855570.52712 4067 b6136c293b23f134238b7ddf568b2018 ""

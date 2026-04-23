@@ -1,0 +1,26 @@
+# LaTeX
+*.aux
+*.log
+*.toc
+*.out
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.pdf
+*.blg
+*.bbl
+
+# Directoris de sortida i temporals
+build/
+__pycache__/
+.vscode/
+.gemini/
+
+# Python
+*.pyc
+*.pyo
+*.pyd
+.env
+
+# Excepcions: si vols que el PDF final es pugi, hauries de comentar la línia *.pdf
+# Però normalment en un TdR es prefereix pujar només el codi font.
